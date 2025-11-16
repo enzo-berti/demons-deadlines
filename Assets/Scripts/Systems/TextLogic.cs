@@ -8,7 +8,7 @@ public class TextLogic : MonoBehaviour
     [SerializeField] TMP_InputField textA;
     [SerializeField] TMP_InputField textB;
 
-    [SerializeField] TMP_Text Score;
+    [SerializeField] TMP_Text scoreText;
     int score = 0;
 
     int indexText = 0;
@@ -29,7 +29,7 @@ public class TextLogic : MonoBehaviour
         if (cleanA == cleanB)
         {
             score++;
-            Score.text = "Point : " + score.ToString();
+            scoreText.text = "Point : " + score.ToString();
 
             textA.text = "";
             textB.text = listText[indexText++];
