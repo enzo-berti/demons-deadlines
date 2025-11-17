@@ -17,12 +17,6 @@ public class FastTyping : MonoBehaviour
         if (cleanA == cleanB)
         {
             score++;
-
-            //Score.text = "Point : " + score.ToString();
-            //
-            //textA.text = "";
-            //textB.text = listText[indexText++];
-            //mailSend.Play();
         }
     }
 
