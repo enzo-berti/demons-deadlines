@@ -27,7 +27,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6144935444870834168}
-  m_LocalRotation: {x: 0.0000000018626447, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -116,6 +116,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastTyping
       objectReference: {fileID: 0}
+    - target: {fileID: 3345669061771489039, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: m_text
+      value: Bonsoir cher reseau, hier j'ai pu assister a une rencontre professionnelle
+        chez Creat' N' Connect. J'y ai pu apprendre toute sorte d'invocation. En
+        esperant pouvoir les pratiquer bientot chez mes nouveaux clients ;) #Demon
+        #Pro #Invocation #CreatNConnect
+      objectReference: {fileID: 0}
     - target: {fileID: 3632888326351321672, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -196,13 +203,138 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: inputTMP
+      value: 
+      objectReference: {fileID: 6961127966534164472}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: previewTMP
+      value: 
+      objectReference: {fileID: 5194964420298841463}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: texts.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: 'texts.Array.data[0]'
+      value: "Bonjour, apres plusieurs tentatives infructueuses pour satisfaire vos
+        demandes, je suis au regret de vous informer que je ne peux plus continuer
+        \xE0 travailler avec vous. Cordiablement, Quentin Vocateur"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: 'texts.Array.data[1]'
+      value: 'Bonsoir, pour celebrer la fete des morts, je propose une offre speciale
+        : 20 pour cent de reduction sur toutes les invocations de demons jusqu''a
+        la fin du mois.Cordiablement, Quentin Vocateur'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: 'texts.Array.data[2]'
+      value: Bonjour, je tiens a vous rappeler que l'invocation de demons est une
+        activite reglementee et soumise a des conditions strictes. Toute tentative
+        de fraude ou de manipulation des demons invoques sera facture au double.
+        Cordiablement, Quentin Vocateur
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: 'texts.Array.data[3]'
+      value: Bonjour, je tenais a vous remercier pour votre confiance et votre collaboration.
+        Le demon invoque semble enfin vous obeir ou du moins, il ne vous a pas encore
+        mange, ce qui est un bon signe. Cordiablement, Quentin Vocateur
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: 'texts.Array.data[4]'
+      value: 'Bonsoir, je suis ravi de vous annoncer le lancement de mon nouveau
+        service : l''invocation express de demons. avec un taux de reussite garanti
+        a 666 pour cent ! Cordiablement, Quentin Vocateur'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: 'texts.Array.data[5]'
+      value: Bonsoir, je suis Mr.Vocateur, invocateur de demons freelance. Un besoin
+        urgent de possession ? Je suis votre homme(ou demon, selon les jours). Cordiablement
+        Quentin Vocateur
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: 'texts.Array.data[6]'
+      value: Bonsoir, je suis desole d'apprendre que le demon invoque ne repond pas
+        a vos attentes. Ils peuvent avoir une personnalite difficile parfois. Cordiablement
+        Quentin Vocateur
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: 'texts.Array.data[7]'
+      value: Bonsoir, je vois que vous n'avez pas repondu a mon dernier mail. Est-ce
+        que le demon que vous avez invoque vous a deja mange? Cordiablement, Quentin
+        Vocateur
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: 'texts.Array.data[8]'
+      value: Bonjour, j'espere que vous etes satisfait de la qualite de l'invocation
+        et que le demon repond a vos attentes. Je vous joins la facture pour le service
+        rendu. Cordiablement, Quentin Vocateur
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: 'texts.Array.data[9]'
+      value: Bonsoir cher reseau, hier j'ai pu assister a une rencontre professionnelle
+        chez Creat' N' Connect. J'y ai pu apprendre toute sorte d'invocation. En
+        esperant pouvoir les pratiquer bientot chez mes nouveaux clients ;) #Demon
+        #Pro #Invocation #CreatNConnect
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517809995576077054, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800850225310376808, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1549624322712390061, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4050353960518771189}
   m_SourcePrefab: {fileID: 100100000, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+--- !u!114 &5194964420298841463 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3345669061771489039, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+  m_PrefabInstance: {fileID: 7383102746583626360}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!224 &6060878060759451696 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3632888326351321672, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
   m_PrefabInstance: {fileID: 7383102746583626360}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6961127966534164472 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 499030762572328320, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+  m_PrefabInstance: {fileID: 7383102746583626360}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_InputField
+--- !u!1 &8356239755771395029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1549624322712390061, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
+  m_PrefabInstance: {fileID: 7383102746583626360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4050353960518771189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8356239755771395029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21b8ff38d515b354db71547d8789bb7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FastTypingRandChar
+  randCharList: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ

@@ -1096,12 +1096,12 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 1
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 1
+  m_RayTracingMode: 0
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
@@ -5324,14 +5324,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1954343373}
     m_Modifications:
-    - target: {fileID: 735251292396802320, guid: ca73c63dc7a12064ab0e194f416b1c32, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4325115341616093318, guid: ca73c63dc7a12064ab0e194f416b1c32, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6144935444870834168, guid: ca73c63dc7a12064ab0e194f416b1c32, type: 3}
       propertyPath: m_Name
       value: MailWindow
