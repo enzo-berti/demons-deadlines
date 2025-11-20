@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainTheme : MonoBehaviour
 {
-    int indexClip = 0;
+    int clipIndex = 0;
     [SerializeField] private List<AudioClip> themeClips;
 
     private bool readyToPlayNextOne = false;
@@ -49,10 +49,21 @@ public class MainTheme : MonoBehaviour
 
     private void Update()
     {
+        if (PlayerData.Instance.DemonSummonedNum != clipIndex)
+        {
+            if (themeClips.Count <= PlayerData.Instance.DemonSummonedNum)
+            {
+                return;
+            }
+
+            NextTheme();
+            clipIndex = PlayerData.Instance.DemonSummonedNum;
+        }
+
         if (readyToPlayNextOne && !themeSource.isPlaying)
         {
             themeSource.loop = true;
-            themeSource.clip = themeClips[indexClip++];
+            themeSource.clip = themeClips[clipIndex];
             themeSource.Play();
         }
     }

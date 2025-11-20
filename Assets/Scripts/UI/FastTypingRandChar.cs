@@ -16,6 +16,11 @@ public class FastTypingRandChar : MonoBehaviour
 
     private void Update()
     {
+        if (PlayerData.Instance.DemonSummonedNum < 1)
+        {
+            return; // no game for you today :(
+        }
+
         timer -= Time.deltaTime;
 
         if (timer <= 0f)

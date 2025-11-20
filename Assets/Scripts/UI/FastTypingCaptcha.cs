@@ -10,7 +10,7 @@ public class FastTypingCaptcha : MonoBehaviour
 
     private void Update()
     {
-        if (!captchaGame.IsActivated())
+        if (PlayerData.Instance.DemonSummonedNum >= 2 && !captchaGame.IsActivated())
         {
             timer -= Time.deltaTime;
 

@@ -14,8 +14,6 @@ public class FastTyping : MonoBehaviour
     private string[] words;
     private string correctInput = string.Empty;
 
-    private int score = 0;
-
     private void Awake()
     {
         NewText();
@@ -28,7 +26,7 @@ public class FastTyping : MonoBehaviour
             indexWord++;
             if (indexWord == words.Length)
             {
-                score++;
+                PlayerData.Instance.Score++;
                 NewText();
                 return;
             }

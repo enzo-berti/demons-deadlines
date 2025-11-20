@@ -17,16 +17,17 @@ public class Phone : MonoBehaviour
     private bool peekedUp = false;
     private bool ringing = false;
 
-    public void Awake()
-    {
-        Ring();
-    }
-
     private void Update()
     {
         if (peekedUp && Mouse.current.leftButton.wasPressedThisFrame && phoneText.IsTextFinished())
         {
             HangUp();
+        }
+
+        if (PlayerData.Instance.Score >= 1)
+        {
+            Ring();
+            PlayerData.Instance.Score = 0;
         }
     }
 
@@ -57,7 +58,8 @@ public class Phone : MonoBehaviour
         if (ringing) // no phone call
         {
             phoneText.StartPhoneCall();
-            mainTheme.NextTheme(); // we need to switch theme when the player summon the demon not when the call start
+
+            PlayerData.Instance.DemonSummonedNum += 1;
 
             ringing = false;
         }
