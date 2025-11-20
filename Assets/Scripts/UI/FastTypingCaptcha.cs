@@ -4,9 +4,9 @@ public class FastTypingCaptcha : MonoBehaviour
 {
     [SerializeField] CaptchaGame captchaGame;
 
-    [SerializeField] private float maxTimer = 20f;
-    [SerializeField] private float minTimer = 10f;
-    private float timer = 15f;
+    private float maxTimer = 25f;
+    private float minTimer = 15f;
+    private float timer = 25f;
 
     private void Update()
     {

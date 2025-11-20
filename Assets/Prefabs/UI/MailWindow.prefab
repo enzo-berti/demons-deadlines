@@ -253,7 +253,7 @@ PrefabInstance:
       propertyPath: 'texts.Array.data[1]'
       value: 'Bonsoir, pour celebrer la fete des morts, je propose une offre speciale
         : 20 pour cent de reduction sur toutes les invocations de demons jusqu''a
-        la fin du mois.Cordiablement, Quentin Vocateur'
+        la fin du mois. Cordiablement, Quentin Vocateur'
       objectReference: {fileID: 0}
     - target: {fileID: 5130646646807973915, guid: b596b9d08eb4e544b8dc07b848304cb4, type: 3}
       propertyPath: 'texts.Array.data[2]'
@@ -394,4 +394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d4d9a5d026303d43a4b65232820b2c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  captchaWindow: {fileID: 0}
+  captchaGame: {fileID: 0}
+  maxTimer: 20
+  minTimer: 10
