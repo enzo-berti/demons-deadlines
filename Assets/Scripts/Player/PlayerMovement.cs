@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (canInteract && Raycast() && Mouse.current.leftButton.wasPressedThisFrame)
+        if (canInteract && RaycastCheck() && Mouse.current.leftButton.wasPressedThisFrame)
         {
             lastInteractable.Play();
 
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private bool Raycast()
+    private bool RaycastCheck()
     {
         Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width * 0.5f, Screen.height * 0.5f));
 

@@ -1,4 +1,3 @@
-using System.Linq;
 using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
@@ -22,7 +21,7 @@ public class FastTyping : MonoBehaviour
         NewText();
     }
 
-    private void Update()
+    public void UpdateFastTyping()
     {
         if (CleanText(inputTMP.text) == CleanText(nextWord))
         {

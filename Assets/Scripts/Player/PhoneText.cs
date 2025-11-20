@@ -1,21 +1,14 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PhoneText : MonoBehaviour
 {
-    [SerializeField]
-    [TextArea]
-    private List<string> _dialogueLines;
+    [SerializeField] [TextArea] private List<string> _dialogueLines;
     private int _lineIndex = 0;
-
-    [SerializeField] private PlayerMovement playerMovement;
 
     private TMP_Text _text;
     public CanvasGroup _group;
-
-    private bool isPlaying = false;
 
     [SerializeField]
     private List<AudioClip> phoneClips;
@@ -42,38 +35,43 @@ public class PhoneText : MonoBehaviour
         }
     }
 
+    public bool TryStartPhoneCall()
+    {
+        if (_lineIndex == _dialogueLines.Count)
+        {
+            return false;
+        }
+
+        StartPhoneCall();
+
+        return true;
+    }
+
     public void StartPhoneCall()
     {
         _text.SetText(_dialogueLines[_lineIndex]);
+
         phoneAudio.clip = phoneClips[_lineIndex];
+        phoneAudio.Play();
+        phoneMusic.Play();
+
         _group.alpha = 1;
         _lineIndex++;
-        phoneAudio.Play();
-        playerMovement.canInteract = false;
-        isPlaying = true;
-        phoneMusic.Play();
     }
 
-    public bool CanHangUp()
+    public void StopPhoneCall()
     {
-        return !phoneAudio.isPlaying;
-    }
-
-    private void StopDialogue()
-    {
-        _group.alpha = 0;
-        playerMovement.canInteract = true;
         phoneMusic.Stop();
+
         phoneAudio.clip = hangPhone;
         phoneAudio.Play();
-        isPlaying = false;
+
+        _group.alpha = 0;
     }
 
-    private void Update()
+    public bool IsTextFinished()
     {
-        if (isPlaying && Mouse.current.leftButton.wasPressedThisFrame && !phoneAudio.isPlaying)
-        {
-            StopDialogue();
-        }
+        // need a better way to check
+        return !phoneAudio.isPlaying;
     }
 }

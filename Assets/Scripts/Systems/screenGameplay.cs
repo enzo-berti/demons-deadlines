@@ -24,7 +24,6 @@ public class ScreenGameplay : MonoBehaviour
         playerMovement.canInteract = false;
         mouseLogic.CanMove = true;
 
-        phone.TryHangUp();
         onScreen = true;
     }
 

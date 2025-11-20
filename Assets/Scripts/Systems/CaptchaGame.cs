@@ -17,6 +17,13 @@ public class CaptchaGame : MonoBehaviour
 
     [SerializeField] CaptchaWindow captchaWindow;
 
+    private bool activated = false;
+
+    public bool IsActivated()
+    {
+        return activated;
+    }
+
     public void Activate()
     {
         CaptchaType captchaType = (CaptchaType)UnityEngine.Random.Range(0, Enum.GetValues(typeof(CaptchaType)).Length);
@@ -38,6 +45,8 @@ public class CaptchaGame : MonoBehaviour
         {
             captchaWindow.Activate(captchaType);
         }
+
+        activated = true;
     }
 
     public void Deactivate()
@@ -61,6 +70,8 @@ public class CaptchaGame : MonoBehaviour
         }
 
         captchaWindow.Deactivate();
+
+        activated = false;
     }
 
     static private void ActivateRandomCaptchaG0(GameObject go)

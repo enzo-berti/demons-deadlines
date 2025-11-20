@@ -16,9 +16,9 @@ public class MouseLogic : MonoBehaviour
     private void Awake()
     {
         mouseImage = GetComponent<Image>();
-
-        //Cursor.visible = false; // because I don't know how to hide it by default in the game :clown:
-
+#if !UNITY_EDITOR
+        Cursor.visible = false; // because I don't know how to hide it by default in the game :clown:
+#endif
         mouseRectTransform = GetComponent<RectTransform>();
     }
 

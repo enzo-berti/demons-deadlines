@@ -1,10 +1,11 @@
 using UnityEngine;
-using UnityEngine.Audio;
+using UnityEngine.InputSystem;
 
 public class Phone : MonoBehaviour
 {
     [SerializeField] private GameObject playerPhone;
     [SerializeField] private GameObject cosmeticPhone;
+    [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private PhoneText phoneText;
 
     [SerializeField] private AudioClip hangClip;
@@ -13,65 +14,75 @@ public class Phone : MonoBehaviour
 
     [SerializeField] private MainTheme mainTheme;
 
-    public bool canPeekUp = false;
+    private bool peekedUp = false;
+    private bool ringing = false;
 
     public void Awake()
     {
         Ring();
     }
 
+    private void Update()
+    {
+        if (peekedUp && Mouse.current.leftButton.wasPressedThisFrame && phoneText.IsTextFinished())
+        {
+            HangUp();
+        }
+    }
+
     public void Ring()
     {
-        canPeekUp = true;
         audioSource.clip = ringingClip;
         audioSource.loop = true;
         audioSource.Play();
+
+        ringing = true;
     }
 
     public void Interact()
     {
-        bool hasPhone = playerPhone.activeSelf;
-
-        if (hasPhone)
-        {
-            mainTheme.IncreaseVolume();
-            TryHangUp();
-        }
-        else
-        {
-            mainTheme.DecreaseVolume();
-            TryPeekUp();
-        }
-
-        audioSource.Play();
-        playerPhone.SetActive(!playerPhone.activeSelf);
-        cosmeticPhone.SetActive(!cosmeticPhone.activeSelf);
+        PeekUp();
     }
 
-    private void TryPeekUp()
+    private void PeekUp()
     {
-        audioSource.loop = false;
-        audioSource.clip = hangClip;
+        peekedUp = true;
 
-        if (canPeekUp && phoneText)
+        mainTheme.DecreaseVolume();
+
+        audioSource.clip = hangClip;
+        audioSource.loop = false;
+        audioSource.Play();
+
+        if (ringing) // no phone call
         {
             phoneText.StartPhoneCall();
-            mainTheme.NextTheme();
+            mainTheme.NextTheme(); // we need to switch theme when the player summon the demon not when the call start
 
-            canPeekUp = false;
+            ringing = false;
         }
+
+        playerPhone.SetActive(true);
+        cosmeticPhone.SetActive(false);
+
+        playerMovement.canInteract = false;
     }
 
-    public void TryHangUp()
+    private void HangUp()
     {
+        peekedUp = false;
+
+        mainTheme.IncreaseVolume();
+
         audioSource.loop = false;
         audioSource.clip = hangClip;
+        audioSource.Play();
 
-        if (!phoneText.CanHangUp())
-        {
-            return;
-        }
+        phoneText.StopPhoneCall();
 
-        canPeekUp = true;
+        playerPhone.SetActive(false);
+        cosmeticPhone.SetActive(true);
+
+        playerMovement.canInteract = true;
     }
 }

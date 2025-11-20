@@ -2307,12 +2307,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   playerPhone: {fileID: 919132149265789020}
   cosmeticPhone: {fileID: 1725153587}
+  playerMovement: {fileID: 1510068311}
   phoneText: {fileID: 1174412984}
   hangClip: {fileID: 8300000, guid: b88482d5e5842444a8f1190ba680c308, type: 3}
   ringingClip: {fileID: 8300000, guid: af9c27e3c38c033458e6c55266a9febd, type: 3}
   audioSource: {fileID: 982533253}
   mainTheme: {fileID: 1510068313}
-  canPeekUp: 1
 --- !u!82 &982533253
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2650,396 +2650,17 @@ Transform:
   - {fileID: 393428745}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1174412980
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1174412981}
-  - component: {fileID: 1174412983}
-  - component: {fileID: 1174412982}
-  - component: {fileID: 1174412984}
-  - component: {fileID: 1174412985}
-  - component: {fileID: 1174412986}
-  m_Layer: 0
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1174412981
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174412980}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1739422594}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1174412982
+--- !u!114 &1174412984 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5700573075406542187, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+  m_PrefabInstance: {fileID: 9175108003553273391}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174412980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Bonjour, Je suis le professeur Mage Uscule, J''aimerais faire une petite
-    farce a mes etudiants pour Halloween, si vous pourriez invoquer un demon pour
-    leur mettre un coup de pression pendant leur examen ecrit, genre un truc qui
-    enleve ou ajoute des lettres au hasard, peu importe ca serait genial ! Ah, et
-    le dite a personne surtout ! Botus et mouche cousues ! '
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7c4a8c84f0b7ba44791a046e7866c51e, type: 2}
-  m_sharedMaterial: {fileID: -3361878446225053225, guid: 7c4a8c84f0b7ba44791a046e7866c51e, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 11400000, guid: f37e74199b916c34690f20d807c29132, type: 2}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 8
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1174412983
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174412980}
-  m_CullTransparentMesh: 1
---- !u!114 &1174412984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174412980}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c51357882a07dc84eb7c63313bd8a620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  _dialogueLines:
-  - 'Bonjour, Je suis le professeur Mage Uscule, J''aimerais faire une petite farce
-    a mes etudiants pour Halloween, si vous pourriez invoquer un demon pour leur
-    mettre un coup de pression pendant leur examen ecrit, genre un truc qui enleve
-    ou ajoute des lettres au hasard, peu importe ca serait genial ! Ah, et le dite
-    a personne surtout ! Botus et mouche cousues ! '
-  - "Euuuh Allo, oui bonjour, ici Theo Parano... Il faut que je vous confier queqlue
-    chose, je crois que quelqu'un m'espionne a chaque fois que je dois valider quelque
-    chose sur mon\r\nordinateur on me demande de cliquer sur des velos ou des feux
-    rouges et tout le monde sait que j'ai peuuuuuuuuuuuuuur des feux rouges ! Il
-    me faudrait un demon pour faire ce sale boulot a ma place vous n'auriez pas \xE7a
-    par hasard ? \r\n"
-  - "Allo ? Oui, je suis Bobant Burnout salarie de Turnover Company, j'en ai ma claque
-    de mon patron et j'aimerais le faire chier comme il faut avant de depose ma demission.
-    Est-ce que vous pourriez invoquer quelque chose qui pourrai remplacer les lettres
-    de son clavier d'ordinateur par des symboles ? Ca lui apprendra \xE0 vouloir
-    faire travailler ses salari\xE9 sur des clavier en BEPO !"
-  - 'ALLO ! ALLOOOOOOOOOOO Y A QUELQU''UN !!!!? Oui c''est moi Mme Sarachaite Desparts,
-    J''ai tout perdu vous m''entendez ! TOUUUT ! 1 000 000 000 parti en fume a cause
-    de ma souris sans fil qui a decide de tomber en rade de batterie alors que j''etais
-    en plein trade avec la bourse de Shanghai ! J''ai p''tet une chance de minimiser
-    les pertes mais il me faut une souris fonctionnelle alors invoquez-moi rapidement
-    un demon qui me face bouger tout ca ! Combien de DPI je veux sur ma souris ?
-    J''en sais rien et j''menfous ! '
-  - Ausecour, aidez-moi ! Ici le Comte Vladark Mode, je vais fooooooooondre, quelqu'un
-    a augmenter la luminosite de mon ecran pour me faire une blague mais c'est pas
-    drole, nous les vampires sommes tres sensibles a la lumiere ! Pourriez-vous rapidement
-    invoquer un Demon pour baisser la luminosite de mon ecran ? Ces petits malins
-    on egalement enlever le bouton de reglage sous l'ecran, Depechez-vous je risque
-    l'insolation avec cest betises moi !
-  playerMovement: {fileID: 1510068311}
-  _group: {fileID: 1964056044}
-  phoneClips:
-  - {fileID: 8300000, guid: 8b4293b1d1b7f94449670eb390ec6511, type: 3}
-  - {fileID: 8300000, guid: 07d122d253aa8ce40ae8b6fa272aac9c, type: 3}
-  - {fileID: 8300000, guid: 12220adb343efb14ab13d6d700a270de, type: 3}
-  - {fileID: 8300000, guid: 4bb948d695e16944aaf6e8974eff1432, type: 3}
-  - {fileID: 8300000, guid: 13f1183d30d43d344ad43a4245f2e8cd, type: 3}
-  phoneAudio: {fileID: 1174412985}
-  phoneMusic: {fileID: 1174412986}
-  hangPhone: {fileID: 8300000, guid: 32e453dc90fcfeb4a8e0868fc0cd7073, type: 3}
---- !u!82 &1174412985
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174412980}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!82 &1174412986
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174412980}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 6ae59839321493a4fa3247eac709a200, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.25
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!4 &1263426080 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8561662490384733804, guid: 834c6d16e9979a1429dfed36db2ed5be, type: 3}
@@ -3796,109 +3417,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3252605951078787943, guid: 81f43fd7c0c512c4f902875ae10ca1cc, type: 3}
   m_PrefabInstance: {fileID: 4322484899369439912}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1739422593
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1739422594}
-  - component: {fileID: 1739422597}
-  - component: {fileID: 1739422596}
-  - component: {fileID: 1739422595}
-  m_Layer: 0
-  m_Name: TextBox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1739422594
+--- !u!224 &1739422594 stripped
 RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+  m_PrefabInstance: {fileID: 9175108003553273391}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739422593}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1174412981}
-  m_Father: {fileID: 1964056041}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1010.8, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1739422595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739422593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.VerticalLayoutGroup
-  m_Padding:
-    m_Left: 32
-    m_Right: 32
-    m_Top: 8
-    m_Bottom: 16
-  m_ChildAlignment: 0
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
---- !u!114 &1739422596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739422593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1739422597
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739422593}
-  m_CullTransparentMesh: 1
 --- !u!1 &1795667528
 GameObject:
   m_ObjectHideFlags: 0
@@ -4851,13 +4374,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132149265789020}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.538768, y: 0.49664944, z: 0.43276832, w: -0.5251476}
+  m_LocalRotation: {x: -0.6825199, y: 0.7226476, z: -0.108267516, w: 0.015007839}
   m_LocalPosition: {x: -0.947, y: -0.30899978, z: 0.806}
-  m_LocalScale: {x: 18.833967, y: 13.289142, z: 18.833971}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2141936058}
-  m_LocalEulerAnglesHint: {x: 7.816, y: 265.724, z: -87.403}
+  m_LocalEulerAnglesHint: {x: 7.816, y: 170.15, z: -87.403}
 --- !u!1001 &813415543424782792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4947,7 +4470,7 @@ GameObject:
   - component: {fileID: 3469287837438813507}
   - component: {fileID: 1711813855791763849}
   m_Layer: 3
-  m_Name: telephone_petittruc
+  m_Name: PhoneCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5324,10 +4847,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1954343373}
     m_Modifications:
+    - target: {fileID: 4050353960518771189, guid: ca73c63dc7a12064ab0e194f416b1c32, type: 3}
+      propertyPath: minTimer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6144935444870834168, guid: ca73c63dc7a12064ab0e194f416b1c32, type: 3}
       propertyPath: m_Name
       value: MailWindow
       objectReference: {fileID: 0}
+    - target: {fileID: 6430477178601270056, guid: ca73c63dc7a12064ab0e194f416b1c32, type: 3}
+      propertyPath: maxTimer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6430477178601270056, guid: ca73c63dc7a12064ab0e194f416b1c32, type: 3}
+      propertyPath: minTimer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6430477178601270056, guid: ca73c63dc7a12064ab0e194f416b1c32, type: 3}
+      propertyPath: captchaGame
+      value: 
+      objectReference: {fileID: 1532222367}
+    - target: {fileID: 6430477178601270056, guid: ca73c63dc7a12064ab0e194f416b1c32, type: 3}
+      propertyPath: captchaWindow
+      value: 
+      objectReference: {fileID: 1795667533}
     - target: {fileID: 8180753679995216412, guid: ca73c63dc7a12064ab0e194f416b1c32, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5420,7 +4963,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132149265789020}
-  m_Mesh: {fileID: -3329902420748629119, guid: 1baa0ecce41749341a380b63b1ebb013, type: 3}
+  m_Mesh: {fileID: -3329902420748629119, guid: 4e985e927502b094da5f03d814dcf40a, type: 3}
 --- !u!1001 &3614481613447427567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5634,7 +5177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5835319470062227969, guid: 81f43fd7c0c512c4f902875ae10ca1cc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.108
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5835319470062227969, guid: 81f43fd7c0c512c4f902875ae10ca1cc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6029,6 +5572,131 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a5001bbe61eddc40bed9cacd62f2653, type: 3}
+--- !u!1001 &9175108003553273391
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1964056041}
+    m_Modifications:
+    - target: {fileID: 4154131329410900586, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_Name
+      value: PhoneTextBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700573075406542187, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: _group
+      value: 
+      objectReference: {fileID: 1964056044}
+    - target: {fileID: 6914442192233721404, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914442192233721404, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914442192233721404, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914442192233721404, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914442192233721404, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914442192233721404, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1010.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247639765122533588, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e7c33316cfb2a04f99da94564cf6eca, type: 3}
 --- !u!4 &9217581391125913849 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2334129791219243212, guid: a8c8dac25f874504582397396df1d20c, type: 3}

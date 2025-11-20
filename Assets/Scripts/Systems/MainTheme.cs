@@ -49,7 +49,6 @@ public class MainTheme : MonoBehaviour
 
     private void Update()
     {
-
         if (readyToPlayNextOne && !themeSource.isPlaying)
         {
             themeSource.loop = true;
