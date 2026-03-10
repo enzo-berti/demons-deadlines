@@ -8,7 +8,7 @@ public class ScreenGameplay : MonoBehaviour
     [SerializeField] CinemachineCamera deskCamera;
     [SerializeField] Phone phone;
     [SerializeField] PlayerMovement playerMovement;
-    [SerializeField] MouseLogic mouseLogic;
+    [SerializeField] MouseUI mouseLogic;
 
     public bool onScreen = false;
 

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class MouseLogic : MonoBehaviour
+public class MouseUI : MonoBehaviour
 {
     [SerializeField] private Sprite clicSprite;
     [SerializeField] private Sprite normalSprite;

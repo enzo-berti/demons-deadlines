@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8408400420357717805}
   - component: {fileID: 2030535630345055570}
   - component: {fileID: 4008682604900327833}
-  - component: {fileID: 7587023265226727984}
+  - component: {fileID: 9210612436502989092}
   - component: {fileID: 2485456078333667534}
   m_Layer: 5
   m_Name: Mouse
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7587023265226727984
+--- !u!114 &9210612436502989092
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,11 +86,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6985244065392571775}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ded8149b7482e840b7811d9dd9145c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 33fe39e6c49a6694c87ac292a6286d2f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MouseLogic
+  m_EditorClassIdentifier: Assembly-CSharp::MouseUI
   clicSprite: {fileID: 1070799252, guid: 1e8a7ceea541b034aa5e73494e73ada5, type: 3}
   normalSprite: {fileID: -2034822868, guid: 1e8a7ceea541b034aa5e73494e73ada5, type: 3}
+  <CanMove>k__BackingField: 1
 --- !u!114 &2485456078333667534
 MonoBehaviour:
   m_ObjectHideFlags: 0
